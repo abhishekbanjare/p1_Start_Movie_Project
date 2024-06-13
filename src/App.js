@@ -1,5 +1,7 @@
+// Hello ji to kaise ho sub log..............
+// Hello ji to kaise ho sub log..............
 import './App.css';
- //import Header from './components/Header';  //here import single function
+//import Header from './components/Header';  //here import single function
 //import {Header, Footer} from './Header'; //here we import multiple function
 //import Header,{Footer} from './Header';  //here we import both function 
 // import {Header, Footer} from './components/Header';
@@ -12,22 +14,22 @@ import movies from "./movie.json";
 function App() {
   return (
     <div className='App'>
-        <Header />
-        <div className="main">
-          {
-            movies.map((element,index)=>{
-              return(
-                <Movie 
-                  key={index}
-                  title={element.Title}
-                  year={element.Year}
-                  img={element.Poster}
-                />
-              )
-            })
-          }
-            
-        </div>
+      <Header />
+      <div className="main">
+        {
+          movies.map((element, index) => {
+            return (
+              <Movie
+                key={index}
+                title={element.Title}
+                year={element.Year}
+                img={element.Poster}
+              />
+            )
+          })
+        }
+
+      </div>
     </div>
   );
 }
